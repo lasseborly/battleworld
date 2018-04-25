@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>BattleWorld</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+        <h1>BattleWorld</h1>
+        <p>Fight your opponents to the death!</p>
+
+        <div class="player-character" data-player>X</div>
+        <div class="foe" data-foe>Y</div>
+        
+        <div class="fight-interface" data-fight-interface>
+          <h2 data-opponent-nametag>Turalyon wants to battle!</h2>
+          <img src="billeder/turalyon.jpg" alt="turalyon" class="opponent-image" data-opponent-image>
+          <h2>Tyralyon hit points:</h2>
+          <input type="number" value="100" disabled data-t-hp>
+          <h2>Your hit points:</h2>
+          <input type="number" value="100" disabled data-hp>
+          <h3 data-combat-log>Turalyon wants to battle!</h3>
+          <hr>
+          <button data-attack-btn>Attack him!</button>
+          <button data-flee-btn>Run away</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
